@@ -134,7 +134,7 @@ Evaluated over 1,000 seeded games per length in fully greedy mode (ε=0):
 | 5 letters   | 8,904          | 75.9%    | 4.57            |
 | 6 letters   | 15,232         | 75.0%    | 4.20            |
 | 7 letters   | 23,109         | 75.2%    | 3.95            |
-| 8 letters   | 28,420         | 69.0%    | 3.51            |
+| 8 letters   | 28,420         | 73.9%    | 3.45            |
 | 9 letters   | 24,873         | 70.9%    | 3.48            |
 | 10 letters  | 20,300         | 64.5%    | 2.96            |
 
