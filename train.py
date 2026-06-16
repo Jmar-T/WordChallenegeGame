@@ -47,7 +47,7 @@ USE_FORCED_OPENER = True
 OPENER_POOL_SIZE  = 20
 
 # Warm start — set True to resume from an existing checkpoint
-WARM_START         = True
+WARM_START         = False
 CHECKPOINT_WEIGHTS = f"wordle_dqn_len{WORD_LENGTH}.pth"
 CHECKPOINT_BUFFER  = f"wordle_dqn_len{WORD_LENGTH}_buffer.pkl"
 

@@ -107,15 +107,19 @@ def play_wordle(dictionary_path: str = "words.txt") -> None:
     """Runs one complete game of Wordle in the terminal."""
 
     # Word length selection
-    try:
-        word_length = int(input("Word length (e.g. 5): ").strip())
-    except ValueError:
-        print("Please enter a valid integer.")
-        return
+    valid_value = False
+    while not valid_value:
+        try:
+            word_length = int(input("Please enter your desired word length (2-28):").strip())
+            valid_value=True
+        except ValueError:
+            print("Please enter a valid integer. (2-28)")
+            continue
+        
+        if word_length < 2 or word_length == 26 or word_length > 28:
+            valid_value = False
+            print("Word length must be between 2-28, but not 26")
 
-    if word_length < 2:
-        print("Word length must be at least 2.")
-        return
 
     print(f"\nLoading dictionary...")
     dictionary  = load_dictionary(dictionary_path, word_length)

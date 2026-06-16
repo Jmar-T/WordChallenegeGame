@@ -1,6 +1,6 @@
 import random
 acceptedChars = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
-TheFile = open("Dictionary", "r")
+TheFile = open("original/Dictionary", "r")
 File2 = open("NewDict", "w")
 
 lengthOfWordle = int(input("What length of the wordle would you like? :"))

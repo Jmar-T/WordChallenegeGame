@@ -33,6 +33,18 @@ wordle-dqn-agent/
 ```
 
 ---
+## Requirements
+
+```
+python >= 3.10
+torch
+numpy
+```
+
+Install dependencies:
+```bash
+pip install -r requirements.txt
+```
 
 ## Quickstart
 
@@ -177,15 +189,3 @@ The biggest single improvement was switching from a flat output head to the scor
 
 ---
 
-## Requirements
-
-```
-python >= 3.10
-torch
-numpy
-```
-
-Install dependencies:
-```bash
-pip install torch numpy
-```
